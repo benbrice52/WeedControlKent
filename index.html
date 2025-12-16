@@ -447,6 +447,9 @@
             overflow: hidden;
             box-shadow: var(--shadow-sm);
             border: 1px solid var(--border-color);
+            opacity: 1 !important;
+            transform: none !important;
+            pointer-events: auto;
         }
 
         .faq-question {
@@ -462,6 +465,9 @@
             border: none;
             width: 100%;
             text-align: left;
+            pointer-events: auto;
+            position: relative;
+            z-index: 1;
         }
 
         .faq-question:hover {
@@ -954,7 +960,9 @@
             header,
             .mobile-menu-btn,
             .scroll-top,
-            .cta-button {
+            .cta-button,
+            .seasonal-banner,
+            .sticky-contact-bar {
                 display: none;
             }
 
@@ -962,10 +970,236 @@
                 margin-top: 0;
             }
         }
+
+        /* Seasonal Banner */
+        .seasonal-banner {
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            text-align: center;
+            position: relative;
+            border-bottom: 3px solid #2980b9;
+        }
+
+        .seasonal-banner-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .seasonal-banner h3 {
+            font-size: 1.1rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .seasonal-banner p {
+            margin: 0;
+            font-size: 0.95rem;
+            opacity: 0.95;
+            line-height: 1.5;
+        }
+
+        .seasonal-banner-icon {
+            font-size: 2rem;
+        }
+
+        .banner-close {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+
+        .banner-close:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* Sticky Contact Bar */
+        .sticky-contact-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            padding: 1rem 2rem;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+            z-index: 999;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .sticky-contact-bar.visible {
+            transform: translateY(0);
+        }
+
+        .sticky-contact-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .sticky-contact-text {
+            color: white;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .sticky-contact-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .sticky-btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sticky-btn-call {
+            background: #27ae60;
+            color: white;
+        }
+
+        .sticky-btn-call:hover {
+            background: #229954;
+            transform: translateY(-2px);
+        }
+
+        .sticky-btn-email {
+            background: #3498db;
+            color: white;
+        }
+
+        .sticky-btn-email:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .sticky-btn-quote {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .sticky-btn-quote:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .seasonal-banner {
+                padding: 1rem 1.5rem;
+            }
+
+            .seasonal-banner-content {
+                gap: 1rem;
+            }
+
+            .seasonal-banner h3 {
+                font-size: 1rem;
+            }
+
+            .seasonal-banner p {
+                font-size: 0.85rem;
+            }
+
+            .sticky-contact-bar {
+                padding: 0.8rem 1rem;
+            }
+
+            .sticky-contact-content {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+
+            .sticky-contact-text {
+                font-size: 0.9rem;
+                text-align: center;
+            }
+
+            .sticky-contact-buttons {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .sticky-btn {
+                padding: 0.7rem 1.2rem;
+                font-size: 0.85rem;
+                flex: 1;
+                min-width: 100px;
+                justify-content: center;
+            }
+
+            .banner-close {
+                right: 0.5rem;
+                width: 25px;
+                height: 25px;
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Seasonal Winter Banner -->
+    <div class="seasonal-banner" id="seasonalBanner">
+        <div class="seasonal-banner-content">
+            <span class="seasonal-banner-icon">❄️</span>
+            <div style="text-align: center;">
+                <h3>Winter Weed Control: Why It Matters</h3>
+                <p>Winter treatments prevent spring growth and provide longer-lasting results. Treat now for a weed-free spring and summer.</p>
+            </div>
+        </div>
+        <button class="banner-close" onclick="document.getElementById('seasonalBanner').style.display='none'" aria-label="Close banner">×</button>
+    </div>
+
+    <!-- Sticky Contact Bar -->
+    <div class="sticky-contact-bar" id="stickyContactBar">
+        <div class="sticky-contact-content">
+            <span class="sticky-contact-text">📞 Need Professional Weed Control?</span>
+            <div class="sticky-contact-buttons">
+                <a href="tel:+447545642021" class="sticky-btn sticky-btn-call">
+                    📞 Call Now
+                </a>
+                <a href="/cdn-cgi/l/email-protection#462920202f25230634293328223129292235292a33322f29283568252968332d" class="sticky-btn sticky-btn-email">
+                    📧 Email
+                </a>
+                <a href="#contact" class="sticky-btn sticky-btn-quote">
+                    📋 Get Quote
+                </a>
+            </div>
+        </div>
+    </div>
 
     <header role="banner">
         <nav role="navigation" aria-label="Main navigation">
@@ -973,7 +1207,7 @@
                 <div class="logo-main" aria-label="Weed Control Kent">
                     <span class="logo-weed">WEED</span><span class="logo-control">CONTROL</span><span class="logo-kent">KENT</span>
                 </div>
-                <div class="logo-parent">A specialist service by Roundwood Solutions Ltd</div>
+                <div class="logo-parent">A specialist service by <a href="https://roundwoodsolutions.co.uk" target="_blank" style="color: #7f8c8d; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#e74c3c'" onmouseout="this.style.color='#7f8c8d'">Roundwood Solutions Ltd</a></div>
             </div>
             <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
                 ☰
@@ -992,9 +1226,9 @@
         <section id="home" class="hero" aria-labelledby="hero-heading">
             <div class="hero-content">
                 <h1 id="hero-heading">Professional Weed Control Solutions Across Kent</h1>
-                <p class="hero-subtitle">Effective commercial weed treatment by Roundwood Solutions Ltd - Serving businesses throughout Kent and South East London</p>
+                <p class="hero-subtitle">Effective commercial weed treatment by <a href="https://roundwoodsolutions.co.uk" target="_blank" style="color: white; text-decoration: underline; opacity: 0.95; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.95'">Roundwood Solutions Ltd</a> - Serving businesses throughout Kent and South East London</p>
                 <div class="cta-container">
-                    <a href="#contact" class="cta-button">Get a Free Quote</a>
+                    <a href="#contact" class="cta-button">Contact Us</a>
                     <a href="#services" class="cta-button cta-button-secondary">Our Services</a>
                 </div>
                 <a href="tel:+447545642021" class="phone-cta">
@@ -1033,6 +1267,111 @@
                         <h3>Contract Maintenance</h3>
                         <p>Flexible service contracts with scheduled treatments throughout the year, ensuring consistent weed control.</p>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Badges Section -->
+        <section style="background: white; padding: 60px 2.5rem; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0;">
+            <div class="container">
+                <div class="section-label" style="text-align: center;">Qualified & Insured</div>
+                <h2 style="text-align: center; font-size: clamp(1.8rem, 4vw, 2.3rem); color: #2c3e50; margin-bottom: 3rem; font-weight: 700;">Professional Credentials</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                    
+                    <!-- BALI Accredited - FEATURED -->
+                    <div style="text-align: center; padding: 2rem 1.5rem; background: linear-gradient(135deg, #f8f9fa 0%, white 100%); border-radius: 10px; transition: all 0.3s; border: 2px solid #27ae60; box-shadow: 0 4px 12px rgba(39,174,96,0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 20px rgba(39,174,96,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(39,174,96,0.1)'">
+                        <div style="margin-bottom: 1rem; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <img src="bali-logo.png" alt="BALI Accredited - British Association of Landscape Industries" style="max-width: 100%; height: auto; max-height: 100px; display: block; margin: 0 auto;">
+                        </div>
+                        <h3 style="font-size: 1.2rem; color: #27ae60; margin-bottom: 0.5rem; font-weight: 700;">BALI Accredited</h3>
+                        <p style="color: #666; font-size: 0.9rem; line-height: 1.6;">British Association of Landscape Industries Member</p>
+                    </div>
+                    
+                    <!-- PA1 Certified -->
+                    <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 10px; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">✓</div>
+                        <h3 style="font-size: 1.1rem; color: #2c3e50; margin-bottom: 0.5rem; font-weight: 600;">PA1 Certified</h3>
+                        <p style="color: #666; font-size: 0.9rem; line-height: 1.6;">Safe Herbicide Use & Application</p>
+                    </div>
+                    
+                    <!-- PA6 AW Certified -->
+                    <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 10px; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">✓</div>
+                        <h3 style="font-size: 1.1rem; color: #2c3e50; margin-bottom: 0.5rem; font-weight: 600;">PA6 AW Certified</h3>
+                        <p style="color: #666; font-size: 0.9rem; line-height: 1.6;">Pesticide Application Near Water</p>
+                    </div>
+                    
+                    <!-- Fully Insured -->
+                    <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 10px; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🛡️</div>
+                        <h3 style="font-size: 1.1rem; color: #2c3e50; margin-bottom: 0.5rem; font-weight: 600;">Fully Insured</h3>
+                        <p style="color: #666; font-size: 0.9rem; line-height: 1.6;">£10M Public Liability Cover</p>
+                    </div>
+                    
+                    <!-- Professional Service -->
+                    <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 10px; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">⭐</div>
+                        <h3 style="font-size: 1.1rem; color: #2c3e50; margin-bottom: 0.5rem; font-weight: 600;">Professional Service</h3>
+                        <p style="color: #666; font-size: 0.9rem; line-height: 1.6;">Qualified Operators</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Area Section -->
+        <section style="background: #f8f9fa; padding: 80px 2.5rem;">
+            <div class="container">
+                <div class="section-label" style="text-align: center;">Coverage Area</div>
+                <h2 style="text-align: center; font-size: clamp(2rem, 4vw, 2.8rem); color: #2c3e50; margin-bottom: 1rem; font-weight: 700;">Areas We Cover</h2>
+                <p style="text-align: center; font-size: 1.15rem; color: #666; max-width: 650px; margin: 0 auto 3rem; line-height: 1.7;">Professional weed control services across Kent and South East London</p>
+                
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <!-- Map Placeholder -->
+                    <div style="background: white; border-radius: 12px; padding: 3rem 2rem; box-shadow: 0 4px 16px rgba(0,0,0,0.08); margin-bottom: 3rem;">
+                        <div style="text-align: center; margin-bottom: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">📍</div>
+                            <h3 style="color: #2c3e50; font-size: 1.5rem; margin-bottom: 1.5rem;">Comprehensive Kent Coverage</h3>
+                        </div>
+                        
+                        <!-- Main Coverage Areas -->
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                            <div style="text-align: center; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+                                <strong style="color: #2c3e50; display: block; margin-bottom: 0.5rem;">North Kent</strong>
+                                <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin: 0;">Dartford, Gravesend, Chatham, Gillingham</p>
+                            </div>
+                            <div style="text-align: center; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+                                <strong style="color: #2c3e50; display: block; margin-bottom: 0.5rem;">Mid Kent</strong>
+                                <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin: 0;">Maidstone, Sittingbourne, Faversham</p>
+                            </div>
+                            <div style="text-align: center; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+                                <strong style="color: #2c3e50; display: block; margin-bottom: 0.5rem;">East Kent</strong>
+                                <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin: 0;">Canterbury, Margate, Ramsgate, Dover</p>
+                            </div>
+                            <div style="text-align: center; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+                                <strong style="color: #2c3e50; display: block; margin-bottom: 0.5rem;">West Kent</strong>
+                                <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin: 0;">Sevenoaks, Tonbridge, Tunbridge Wells</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional Areas List -->
+                        <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                            <h4 style="margin-bottom: 1rem; font-size: 1.2rem;">Also Serving:</h4>
+                            <p style="line-height: 1.8; margin: 0;">Ashford • Folkestone • Rochester • Strood • Rainham • Herne Bay • Whitstable • Deal • Sandwich • Sheerness • Swanley • Edenbridge • Cranbrook • Tenterden • Hythe • New Romney • South East London Areas</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Coverage Info -->
+                    <div style="text-align: center; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                        <p style="color: #666; font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem;">
+                            <strong style="color: #2c3e50;">Not sure if we cover your area?</strong><br>
+                            We travel throughout Kent and surrounding areas for commercial contracts.
+                        </p>
+                        <a href="#contact" style="display: inline-block; background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(52,152,219,0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                            Check Your Postcode →
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1087,56 +1426,56 @@
                 <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
                 <p class="section-subtitle">Everything you need to know about our weed control services</p>
                 <div class="faq-container">
-                    <article class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
+                    <article class="faq-item" onclick="this.classList.toggle('active')">
+                        <div class="faq-question" style="cursor: pointer;">
                             <span>What types of properties do you treat?</span>
-                            <span class="faq-toggle" aria-hidden="true">+</span>
-                        </button>
+                            <span class="faq-toggle">+</span>
+                        </div>
                         <div class="faq-answer">
                             We specialise in commercial, industrial, and public sector properties including car parks, business premises, schools, industrial estates, retail parks, and municipal areas throughout Kent and South East London.
                         </div>
                     </article>
-                    <article class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
+                    <article class="faq-item" onclick="this.classList.toggle('active')">
+                        <div class="faq-question" style="cursor: pointer;">
                             <span>Are your treatments safe for children and pets?</span>
-                            <span class="faq-toggle" aria-hidden="true">+</span>
-                        </button>
+                            <span class="faq-toggle">+</span>
+                        </div>
                         <div class="faq-answer">
                             Yes, we use professional herbicides that are safe when applied correctly by our qualified operators. We provide clear guidance on re-entry times and offer specific treatments for sensitive environments like schools and public spaces.
                         </div>
                     </article>
-                    <article class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
+                    <article class="faq-item" onclick="this.classList.toggle('active')">
+                        <div class="faq-question" style="cursor: pointer;">
                             <span>How long do the results last?</span>
-                            <span class="faq-toggle" aria-hidden="true">+</span>
-                        </button>
+                            <span class="faq-toggle">+</span>
+                        </div>
                         <div class="faq-answer">
                             Results vary depending on treatment type and environmental conditions. Typical treatments provide effective control for 3-6 months. We also offer residual treatments that prevent regrowth for up to 12 months.
                         </div>
                     </article>
-                    <article class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
+                    <article class="faq-item" onclick="this.classList.toggle('active')">
+                        <div class="faq-question" style="cursor: pointer;">
                             <span>Can you work outside normal business hours?</span>
-                            <span class="faq-toggle" aria-hidden="true">+</span>
-                        </button>
+                            <span class="faq-toggle">+</span>
+                        </div>
                         <div class="faq-answer">
                             Absolutely. We regularly work early mornings, evenings, and weekends to minimise disruption to your business operations. Flexible scheduling is available for all our commercial clients.
                         </div>
                     </article>
-                    <article class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
+                    <article class="faq-item" onclick="this.classList.toggle('active')">
+                        <div class="faq-question" style="cursor: pointer;">
                             <span>Do you offer contract services?</span>
-                            <span class="faq-toggle" aria-hidden="true">+</span>
-                        </button>
+                            <span class="faq-toggle">+</span>
+                        </div>
                         <div class="faq-answer">
                             Yes, we provide flexible maintenance contracts with scheduled treatments throughout the year for consistent weed control, reduced long-term costs, and priority service scheduling.
                         </div>
                     </article>
-                    <article class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
+                    <article class="faq-item" onclick="this.classList.toggle('active')">
+                        <div class="faq-question" style="cursor: pointer;">
                             <span>What areas do you cover?</span>
-                            <span class="faq-toggle" aria-hidden="true">+</span>
-                        </button>
+                            <span class="faq-toggle">+</span>
+                        </div>
                         <div class="faq-answer">
                             We provide comprehensive coverage across all of Kent including Chatham, Maidstone, Canterbury, Gravesend, Dartford, Sevenoaks, Tonbridge, and South East London areas.
                         </div>
@@ -1193,20 +1532,20 @@
         <section id="contact" class="contact" aria-labelledby="contact-heading">
             <div class="container">
                 <div class="section-label">Get In Touch</div>
-                <h2 id="contact-heading" class="section-title">Request a Quote</h2>
-                <p class="section-subtitle">Contact us for a free, no-obligation quotation - we typically respond within 24 hours</p>
+                <h2 id="contact-heading" class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch with us - we typically respond within 24 hours</p>
                 <div class="contact-container">
                     <div class="contact-form">
                         <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-                            <h3 style="color: #2c3e50; margin-bottom: 1.5rem; font-size: 1.5rem;">Request Your Free Quote</h3>
-                            <p style="color: #666; margin-bottom: 2rem; line-height: 1.7;">Fill out our quick form and we'll get back to you within 24 hours with a free, no-obligation quotation.</p>
+                            <h3 style="color: #2c3e50; margin-bottom: 1.5rem; font-size: 1.5rem;">Contact Us</h3>
+                            <p style="color: #666; margin-bottom: 2rem; line-height: 1.7;">Fill out our quick form and we'll get back to you within 24 hours.</p>
                             
                             <!-- Google Form Button -->
                             <a href="https://forms.gle/VTCZ7VtjD9X9Gfdi9" 
                                target="_blank"
                                class="submit-button" 
                                style="display: inline-block; text-decoration: none; margin-bottom: 2rem;">
-                                📋 Fill Out Quote Request Form
+                                📋 Fill Out Contact Form
                             </a>
                             
                             <!-- Divider -->
@@ -1214,10 +1553,7 @@
                                 <p style="color: #999; font-size: 0.9rem; margin-bottom: 1.5rem;">Or contact us directly:</p>
                                 
                                 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                                    <a href="mailto:office@roundwoodsolutions.co.uk" 
-                                       style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 0.9rem 1.8rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 2px 8px rgba(52,152,219,0.3);"
-                                       onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(52,152,219,0.4)';"
-                                       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(52,152,219,0.3)';">
+                                    <a href="/cdn-cgi/l/email-protection#6c030a0a050f092c1e031902081b0303081f030019180503021f420f03421907" style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 0.9rem 1.8rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 2px 8px rgba(52,152,219,0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(52,152,219,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(52,152,219,0.3)';">
                                         <span style="font-size: 1.2rem;">📧</span>
                                         <span>Email Us</span>
                                     </a>
@@ -1279,15 +1615,15 @@
             <div class="footer-company">
                 <span style="color: #e74c3c;">WEED</span>CONTROL<span style="color: #3498db;">KENT</span>
             </div>
-            <div class="footer-parent">A specialist service provided by Roundwood Solutions Ltd</div>
-            <p style="margin-top: 1rem; opacity: 0.6;">&copy; 2025 Roundwood Solutions Ltd. All Rights Reserved.</p>
+            <div class="footer-parent">A specialist service provided by <a href="https://roundwoodsolutions.co.uk" target="_blank" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#e74c3c'" onmouseout="this.style.color='rgba(255,255,255,0.8)'">Roundwood Solutions Ltd</a></div>
+            <p style="margin-top: 1rem; opacity: 0.6;">&copy; 2025 <a href="https://roundwoodsolutions.co.uk" target="_blank" style="color: rgba(255,255,255,0.6); text-decoration: none;" onmouseover="this.style.color='#e74c3c'" onmouseout="this.style.color='rgba(255,255,255,0.6)'">Roundwood Solutions Ltd</a>. All Rights Reserved.</p>
             <p style="opacity: 0.5; font-size: 0.85rem; margin-top: 0.5rem;">Professional commercial weed control services across Kent including Chatham, Maidstone, Canterbury, Gravesend, Dartford, and South East London</p>
         </div>
     </footer>
 
     <button class="scroll-top" aria-label="Scroll to top">↑</button>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Blog posts content
         const blogPosts = {
             winter: {
@@ -1555,35 +1891,22 @@
             }
         });
 
-        // Load reviews on page load
-        window.addEventListener('DOMContentLoaded', loadReviews);
-
-        // FAQ Toggle
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const faqItem = question.parentElement;
-                const wasActive = faqItem.classList.contains('active');
-                
-                document.querySelectorAll('.faq-item').forEach(item => {
-                    item.classList.remove('active');
-                    item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-                });
-                
-                if (!wasActive) {
-                    faqItem.classList.add('active');
-                    question.setAttribute('aria-expanded', 'true');
-                }
-            });
+        // Load reviews
+        window.addEventListener('DOMContentLoaded', function() {
+            loadReviews();
         });
 
-        // Scroll to top button
+        // Scroll to top button and sticky contact bar
         const scrollTopBtn = document.querySelector('.scroll-top');
+        const stickyContactBar = document.getElementById('stickyContactBar');
 
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 scrollTopBtn.classList.add('visible');
+                stickyContactBar.classList.add('visible');
             } else {
                 scrollTopBtn.classList.remove('visible');
+                stickyContactBar.classList.remove('visible');
             }
         });
 
@@ -1606,15 +1929,11 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.service-card, .testimonial-card, .blog-card, .faq-item').forEach(el => {
+        document.querySelectorAll('.service-card, .testimonial-card, .blog-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(25px)';
             el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
             observer.observe(el);
         });
 
-        // Form validation
-        const forms = document.querySelectorAll('form');
-        forms.forEach(form => {
-            const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
-       
+        // Form validati
