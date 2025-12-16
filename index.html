@@ -40,12 +40,7 @@
     }
     </script>
     
-    <!-- Preload critical font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
     <style>
-        /* [Previous CSS remains exactly the same - copying from optimized version] */
         * {
             margin: 0;
             padding: 0;
@@ -72,7 +67,6 @@
             overflow-x: hidden;
         }
 
-        /* Skip to content for accessibility */
         .skip-link {
             position: absolute;
             top: -40px;
@@ -88,7 +82,6 @@
             top: 0;
         }
 
-        /* Header */
         header {
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
@@ -161,7 +154,6 @@
             width: 100%;
         }
 
-        /* Mobile menu button */
         .mobile-menu-btn {
             display: none;
             background: none;
@@ -172,7 +164,6 @@
             padding: 0.5rem;
         }
 
-        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--dark-gray) 0%, #34495e 100%);
             color: white;
@@ -251,7 +242,6 @@
             transform: translateY(-2px);
         }
 
-        /* Phone CTA */
         .phone-cta {
             background: white;
             color: var(--primary-red);
@@ -272,7 +262,6 @@
             box-shadow: var(--shadow-lg);
         }
 
-        /* Services Section */
         .services {
             padding: 100px 2.5rem;
             background: var(--light-gray);
@@ -358,7 +347,6 @@
             line-height: 1.7;
         }
 
-        /* Testimonials */
         .testimonials {
             padding: 100px 2.5rem;
             background: white;
@@ -427,7 +415,6 @@
             font-size: 0.85rem;
         }
 
-        /* Review Form */
         .review-form-container {
             max-width: 600px;
             margin: 3rem auto;
@@ -443,7 +430,6 @@
             text-align: center;
         }
 
-        /* FAQ */
         .faq {
             padding: 100px 2.5rem;
             background: var(--light-gray);
@@ -516,7 +502,6 @@
             }
         }
 
-        /* Blog */
         .blog {
             padding: 100px 2.5rem;
             background: white;
@@ -591,13 +576,100 @@
             align-items: center;
             gap: 0.3rem;
             transition: gap 0.3s;
+            cursor: pointer;
         }
 
         .blog-link:hover {
             gap: 0.6rem;
+            text-decoration: underline;
         }
 
-        /* Contact */
+        /* Blog Modal */
+        .blog-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .blog-modal.active {
+            display: flex;
+        }
+
+        .blog-modal-content {
+            background: white;
+            max-width: 700px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            border-radius: 12px;
+            padding: 3rem;
+            position: relative;
+        }
+
+        .blog-modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #999;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+
+        .blog-modal-close:hover {
+            background: var(--light-gray);
+            color: var(--primary-red);
+        }
+
+        .blog-modal h2 {
+            color: var(--dark-gray);
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .blog-modal .blog-date {
+            margin-bottom: 1.5rem;
+        }
+
+        .blog-modal p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .blog-modal h3 {
+            color: var(--dark-gray);
+            margin: 2rem 0 1rem;
+            font-size: 1.4rem;
+        }
+
+        .blog-modal ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .blog-modal li {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+
         .contact {
             padding: 100px 2.5rem;
             background: var(--light-gray);
@@ -722,7 +794,6 @@
             text-decoration: underline;
         }
 
-        /* Footer */
         footer {
             background: #1a1a1a;
             color: rgba(255,255,255,0.8);
@@ -742,14 +813,12 @@
             opacity: 0.7;
         }
 
-        /* Loading State */
         .loading {
             text-align: center;
             padding: 2rem;
             color: #999;
         }
 
-        /* Success Message */
         .success-message {
             background: #27ae60;
             color: white;
@@ -760,7 +829,6 @@
             display: none;
         }
 
-        /* Alert/notification styles */
         .alert {
             padding: 1rem;
             border-radius: 6px;
@@ -778,7 +846,6 @@
             color: white;
         }
 
-        /* Scroll to top button */
         .scroll-top {
             position: fixed;
             bottom: 2rem;
@@ -810,7 +877,6 @@
             transform: translateY(-3px);
         }
 
-        /* Responsive Design */
         @media (max-width: 968px) {
             .contact-container {
                 grid-template-columns: 1fr;
@@ -878,9 +944,12 @@
                 width: 100%;
                 max-width: 300px;
             }
+
+            .blog-modal-content {
+                padding: 2rem 1.5rem;
+            }
         }
 
-        /* Print Styles */
         @media print {
             header,
             .mobile-menu-btn,
@@ -896,7 +965,6 @@
     </style>
 </head>
 <body>
-    <!-- Skip to content link for accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header role="banner">
@@ -1089,7 +1157,7 @@
                             <div class="blog-date">November 2025</div>
                             <h3>Winter Weed Control: Why It Matters</h3>
                             <p>Many assume weed control is only needed in summer, but winter treatments can be highly effective. Learn why treating in colder months sets you up for success.</p>
-                            <a href="javascript:void(0)" class="blog-link" onclick="showBlogMessage('Winter Weed Control')">Read More →</a>
+                            <span class="blog-link" onclick="openBlogPost('winter')">Read More →</span>
                         </div>
                     </article>
                     <article class="blog-card">
@@ -1098,7 +1166,7 @@
                             <div class="blog-date">October 2025</div>
                             <h3>Commercial Car Park Maintenance Guide</h3>
                             <p>A comprehensive guide to maintaining weed-free car parks, including treatment schedules and cost considerations for facility managers.</p>
-                            <a href="javascript:void(0)" class="blog-link" onclick="showBlogMessage('Car Park Maintenance')">Read More →</a>
+                            <span class="blog-link" onclick="openBlogPost('carpark')">Read More →</span>
                         </div>
                     </article>
                     <article class="blog-card">
@@ -1107,12 +1175,20 @@
                             <div class="blog-date">September 2025</div>
                             <h3>Professional vs DIY Weed Control</h3>
                             <p>What makes professional weed control different? We explain the qualifications, equipment, and expertise that deliver superior, long-lasting results.</p>
-                            <a href="javascript:void(0)" class="blog-link" onclick="showBlogMessage('Professional vs DIY')">Read More →</a>
+                            <span class="blog-link" onclick="openBlogPost('professional')">Read More →</span>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
+
+        <!-- Blog Modal -->
+        <div id="blogModal" class="blog-modal">
+            <div class="blog-modal-content">
+                <button class="blog-modal-close" onclick="closeBlogPost()" aria-label="Close">&times;</button>
+                <div id="blogModalBody"></div>
+            </div>
+        </div>
 
         <section id="contact" class="contact" aria-labelledby="contact-heading">
             <div class="container">
@@ -1122,7 +1198,11 @@
                 <div class="contact-container">
                     <div class="contact-form">
                         <div id="formAlert" style="display: none;" class="alert"></div>
-                        <form id="contactForm" method="POST" aria-label="Contact form">
+                        <form action="https://formsubmit.co/office@roundwoodsolutions.co.uk" method="POST">
+                            <input type="hidden" name="_subject" value="New Weed Control Enquiry - Weed Control Kent">
+                            <input type="hidden" name="_captcha" value="true">
+                            <input type="hidden" name="_next" value="https://weedcontrolkent.netlify.app/#contact">
+                            
                             <div class="form-group">
                                 <label for="name">Name / Company <span aria-label="required">*</span></label>
                                 <input type="text" id="name" name="name" required aria-required="true">
@@ -1154,7 +1234,7 @@
                             <button type="submit" class="submit-button" id="submitBtn">Request Free Quote</button>
                         </form>
                         <p style="text-align: center; color: #999; font-size: 0.85rem; margin-top: 1rem;">
-                            Note: This demo sends emails directly to office@roundwoodsolutions.co.uk
+                            Enquiries sent to: office@roundwoodsolutions.co.uk
                         </p>
                     </div>
                     <div class="contact-info">
@@ -1205,10 +1285,152 @@
         </div>
     </footer>
 
-    <!-- Scroll to top button -->
     <button class="scroll-top" aria-label="Scroll to top">↑</button>
 
     <script>
+        // Blog posts content
+        const blogPosts = {
+            winter: {
+                title: 'Winter Weed Control: Why It Matters',
+                date: 'November 2025',
+                content: `
+                    <h2>Winter Weed Control: Why It Matters</h2>
+                    <div class="blog-date">November 2025</div>
+                    
+                    <p>Many property managers and business owners assume weed control is a purely summer task. However, winter weed treatment is not only effective but essential for maintaining weed-free surfaces year-round.</p>
+                    
+                    <h3>Why Treat in Winter?</h3>
+                    <p>Winter annual weeds germinate in autumn and grow through winter, setting seed in spring. If left untreated, these weeds establish strong root systems that are much harder to control later. Early winter treatment prevents this cycle.</p>
+                    
+                    <h3>Benefits of Winter Treatment</h3>
+                    <ul>
+                        <li><strong>Prevents Spring Growth:</strong> Treating weeds in winter stops them before they become established in spring</li>
+                        <li><strong>Less Regrowth:</strong> Cooler temperatures mean slower regrowth, extending treatment effectiveness</li>
+                        <li><strong>Reduced Competition:</strong> Fewer active weeds mean treatments are more targeted and effective</li>
+                        <li><strong>Cost-Effective:</strong> Preventing spring growth reduces the need for multiple summer treatments</li>
+                    </ul>
+                    
+                    <h3>What We Treat in Winter</h3>
+                    <p>Common winter weeds in Kent include annual meadow grass, shepherd's purse, chickweed, and groundsel. Our professional treatments target these species while they're most vulnerable.</p>
+                    
+                    <h3>Best Practices</h3>
+                    <p>We apply treatments during dry periods with mild temperatures for maximum effectiveness. Our qualified operators use professional herbicides that work even in cooler conditions, ensuring your property stays weed-free through winter and into spring.</p>
+                    
+                    <p style="margin-top: 2rem;"><strong>Ready to protect your property this winter?</strong> Contact us for a free consultation and quotation.</p>
+                `
+            },
+            carpark: {
+                title: 'Commercial Car Park Maintenance Guide',
+                date: 'October 2025',
+                content: `
+                    <h2>Commercial Car Park Maintenance Guide</h2>
+                    <div class="blog-date">October 2025</div>
+                    
+                    <p>For facility managers and property owners, maintaining weed-free car parks is essential for safety, aesthetics, and property value. This comprehensive guide covers everything you need to know.</p>
+                    
+                    <h3>Why Car Park Weed Control Matters</h3>
+                    <p>Weeds in car parks create multiple problems: they damage surface integrity, create trip hazards, look unprofessional, and if left unchecked, can cause significant structural damage requiring costly repairs.</p>
+                    
+                    <h3>Common Car Park Weed Problems</h3>
+                    <ul>
+                        <li><strong>Block Paving Weeds:</strong> Grow between paving blocks, displacing them over time</li>
+                        <li><strong>Tarmac Cracks:</strong> Weeds exploit any weakness in surface integrity</li>
+                        <li><strong>Drainage Channels:</strong> Block drainage systems, leading to water damage</li>
+                        <li><strong>Perimeter Growth:</strong> Weeds along edges can spread rapidly across surfaces</li>
+                    </ul>
+                    
+                    <h3>Treatment Schedule</h3>
+                    <p>We recommend the following treatment schedule for optimal results:</p>
+                    <ul>
+                        <li><strong>Spring (March-May):</strong> Initial treatment to catch early growth</li>
+                        <li><strong>Summer (June-August):</strong> Second application during peak growing season</li>
+                        <li><strong>Autumn (September-November):</strong> Final treatment to prevent winter annuals</li>
+                    </ul>
+                    
+                    <h3>Cost Considerations</h3>
+                    <p>Regular maintenance costs are a fraction of repair costs. A typical car park treatment costs £200-800 depending on size, compared to £5,000+ for surface repairs caused by weed damage.</p>
+                    
+                    <h3>Contract Benefits</h3>
+                    <p>Annual contracts provide better value with scheduled treatments, priority service, and consistent results. We offer flexible payment terms and can work outside business hours to minimize disruption.</p>
+                    
+                    <p style="margin-top: 2rem;"><strong>Get a tailored maintenance plan for your car park.</strong> Request a free site survey and quotation today.</p>
+                `
+            },
+            professional: {
+                title: 'Professional vs DIY Weed Control',
+                date: 'September 2025',
+                content: `
+                    <h2>Professional vs DIY Weed Control</h2>
+                    <div class="blog-date">September 2025</div>
+                    
+                    <p>While DIY weed control might seem cost-effective, professional services deliver superior results, better value, and long-term savings. Here's what makes the difference.</p>
+                    
+                    <h3>Professional Qualifications</h3>
+                    <p>Our operators hold PA1 and PA6 qualifications, the industry standard for safe herbicide application. This training covers:</p>
+                    <ul>
+                        <li>Safe handling and storage of herbicides</li>
+                        <li>Understanding of plant biology and growth patterns</li>
+                        <li>Environmental protection and legal compliance</li>
+                        <li>Risk assessment and hazard management</li>
+                        <li>Equipment calibration and maintenance</li>
+                    </ul>
+                    
+                    <h3>Professional-Grade Equipment</h3>
+                    <p>We use commercial knapsack sprayers with precise calibration, ensuring accurate application rates. Our equipment delivers consistent coverage at the correct pressure, something handheld domestic sprayers cannot achieve.</p>
+                    
+                    <h3>Superior Herbicides</h3>
+                    <p>Professional herbicides are more concentrated, longer-lasting, and more effective than retail products. We use products not available to the public, with residual action that prevents regrowth for months.</p>
+                    
+                    <h3>Expertise and Experience</h3>
+                    <p>We identify weed species and select the most effective treatment. Different weeds require different approaches - what works for annual meadow grass won't work for Japanese knotweed. Our experience ensures first-time success.</p>
+                    
+                    <h3>Safety and Compliance</h3>
+                    <p>Professional application ensures safety for people, pets, and the environment. We carry £10 million public liability insurance and comply with all environmental regulations and safety standards.</p>
+                    
+                    <h3>Cost Comparison</h3>
+                    <p>DIY treatment might cost £50-100 in materials but require multiple applications and still deliver inferior results. Professional treatment costs £150-500 depending on area but delivers results that last 3-6 months, actually saving money long-term.</p>
+                    
+                    <h3>Time Savings</h3>
+                    <p>DIY weed control is time-consuming and often requires repeat applications. Professional service is completed in hours, freeing your time for core business activities.</p>
+                    
+                    <p style="margin-top: 2rem;"><strong>Experience professional results.</strong> Contact us for expert weed control with guaranteed results.</p>
+                `
+            }
+        };
+
+        // Open blog post in modal
+        function openBlogPost(postId) {
+            const modal = document.getElementById('blogModal');
+            const modalBody = document.getElementById('blogModalBody');
+            
+            if (blogPosts[postId]) {
+                modalBody.innerHTML = blogPosts[postId].content;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        }
+
+        // Close blog post modal
+        function closeBlogPost() {
+            const modal = document.getElementById('blogModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close modal on outside click
+        document.getElementById('blogModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeBlogPost();
+            }
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeBlogPost();
+            }
+        });
+
         // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
@@ -1240,83 +1462,7 @@
             });
         });
 
-        // Blog message function
-        function showBlogMessage(topic) {
-            alert(`Full blog post about "${topic}" is coming soon!\n\nIn the meantime, please contact us for more information about our services.`);
-            // Optionally scroll to contact form
-            document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // Contact Form Handling with EMAIL.JS or direct submission
-        document.getElementById('contactForm').addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            const submitBtn = document.getElementById('submitBtn');
-            const formAlert = document.getElementById('formAlert');
-            const originalText = submitBtn.textContent;
-            
-            // Disable button and show loading
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-            formAlert.style.display = 'none';
-            
-            // Collect form data
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                property: document.getElementById('property').value,
-                message: document.getElementById('message').value
-            };
-            
-            try {
-                // Using FormSubmit.co direct submission
-                const response = await fetch('https://formsubmit.co/ajax/office@roundwoodsolutions.co.uk', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        name: formData.name,
-                        email: formData.email,
-                        phone: formData.phone,
-                        property: formData.property || 'Not specified',
-                        message: formData.message,
-                        _subject: 'New Weed Control Enquiry - Weed Control Kent',
-                        _template: 'box',
-                        _captcha: 'false'
-                    })
-                });
-                
-                if (response.ok) {
-                    // Success
-                    formAlert.className = 'alert alert-success';
-                    formAlert.textContent = '✓ Thank you! Your enquiry has been sent successfully. We\'ll be in touch within 24 hours.';
-                    formAlert.style.display = 'block';
-                    this.reset();
-                    
-                    // Hide message after 5 seconds
-                    setTimeout(() => {
-                        formAlert.style.display = 'none';
-                    }, 5000);
-                } else {
-                    throw new Error('Form submission failed');
-                }
-            } catch (error) {
-                // Error handling
-                console.error('Form submission error:', error);
-                formAlert.className = 'alert alert-info';
-                formAlert.innerHTML = '⚠️ There was an issue sending your message.<br>Please email us directly at: <a href="mailto:office@roundwoodsolutions.co.uk" style="color: white; text-decoration: underline;">office@roundwoodsolutions.co.uk</a>';
-                formAlert.style.display = 'block';
-            } finally {
-                // Re-enable button
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }
-        });
-
-        // Review System with error handling
+        // Review System
         async function loadReviews() {
             const reviewsContainer = document.getElementById('reviewsContainer');
             
@@ -1329,7 +1475,6 @@
                     
                     reviewsContainer.innerHTML = '';
                     
-                    // Sort reviews by date (newest first)
                     const validReviews = reviews
                         .filter(r => r && r.value)
                         .map(r => JSON.parse(r.value))
@@ -1413,19 +1558,17 @@
         // Load reviews on page load
         window.addEventListener('DOMContentLoaded', loadReviews);
 
-        // FAQ Toggle with accessibility
+        // FAQ Toggle
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const faqItem = question.parentElement;
                 const wasActive = faqItem.classList.contains('active');
                 
-                // Close all FAQs
                 document.querySelectorAll('.faq-item').forEach(item => {
                     item.classList.remove('active');
                     item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
                 });
                 
-                // Open clicked FAQ if it wasn't active
                 if (!wasActive) {
                     faqItem.classList.add('active');
                     question.setAttribute('aria-expanded', 'true');
@@ -1448,7 +1591,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // Scroll animations with Intersection Observer
+        // Scroll animations
         const observerOptions = {
             threshold: 0.15,
             rootMargin: '0px 0px -80px 0px'
@@ -1470,7 +1613,7 @@
             observer.observe(el);
         });
 
-        // Form validation enhancement
+        // Form validation
         const forms = document.querySelectorAll('form');
         forms.forEach(form => {
             const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
