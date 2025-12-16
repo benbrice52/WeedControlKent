@@ -1,0 +1,7 @@
+# Netlify redirects file
+# Ensures proper routing for HTML files
+
+/contact    /contact.html   200
+/about      /about.html     200
+/services   /services.html  200
+/           /index.html     200
