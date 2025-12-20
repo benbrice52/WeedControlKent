@@ -9,15 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Deploy via SFTP
-      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-      with:
-        server: sftp.weedcontrolkent.co.uk
-        username: csh3368367
-        password: ${{ secrets.SFTP_PASSWORD }}
-        port: 22
-        local_path: './*'
-        remote_path: '/'
-        sftp_only: true
+      # Step 1: Checkout the repository
+      - uses: actions/checkout@v3
+
+      # Step 2: Deploy via SFTP
+      - name: Deploy via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          server: sftp.weedcontrolkent.co.uk
+          username: csh3368367
+          password: ${{ secrets.SFTP_PASSWORD }}
+          port: 22
+          local_path: './*'
+          remote_path: '/home/csh3368367/public_html/'   # <- Folder you can write to
+          sftp_only: true
