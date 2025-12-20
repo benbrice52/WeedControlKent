@@ -1,0 +1,22 @@
+name: Deploy to Fasthosts
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Deploy via SFTP
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: sftp.weedcontrolkent.co.uk
+        username: csh3368367
+        password: ${{ secrets.SFTP_PASSWORD }}
+        protocol: ftps
+        port: 22
+        server-dir: /public_html/
