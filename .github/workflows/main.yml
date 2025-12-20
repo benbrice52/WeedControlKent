@@ -17,6 +17,6 @@ jobs:
         server: sftp.weedcontrolkent.co.uk
         username: csh3368367
         password: ${{ secrets.SFTP_PASSWORD }}
-        protocol: ftps
+        protocol: sftp
         port: 22
         server-dir: /public_html/
