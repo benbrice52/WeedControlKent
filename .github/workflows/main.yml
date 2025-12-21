@@ -7,18 +7,18 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Deploy website via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          server: ftp.fasthosts.co.uk
-          username: weedcontrolkent.co.uk
-          password: ${{ secrets.SFTP_PASSWORD }}
-          port: 22
-          local_path: './*'
-          remote_path: 'HTDOCS'
-          sftp_only: false
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Deploy website via SFTP
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      with:
+        server: sftp.weedcontrolkent.co.uk
+        username: csh3368367
+        password: ${{ secrets.SFTP_PASSWORD }}
+        port: 22
+        local_path: './*'
+        remote_path: 'htdocs/'
+        sftp_only: true
