@@ -1,0 +1,160 @@
+═══════════════════════════════════════════════════════════════════
+  ROUNDWOOD SOLUTIONS LINKS ADDED - SUMMARY
+═══════════════════════════════════════════════════════════════════
+
+✅ ALL FILES UPDATED WITH ROUNDWOOD SOLUTIONS LINKS!
+
+═══════════════════════════════════════════════════════════════════
+🔗 WHERE LINKS WERE ADDED
+═══════════════════════════════════════════════════════════════════
+
+MAIN PAGES (index.html, services.html, about.html, contact.html):
+-------------------------------------------------------------------
+
+1. HEADER TAGLINE (Top of every page)
+   "A specialist service by Roundwood Solutions Ltd"
+   ↓
+   "A specialist service by [LINK]Roundwood Solutions Ltd[/LINK]"
+   
+   Link opens in new tab: https://roundwoodsolutions.co.uk
+
+2. FOOTER - COMPANY INFO SECTION
+   "A specialist service by Roundwood Solutions Ltd"
+   ↓
+   "A specialist service by [LINK]Roundwood Solutions Ltd[/LINK]"
+   
+   Link opens in new tab with styled green color (#a8d5a8)
+
+3. FOOTER - COPYRIGHT LINE
+   "© 2025 Weed Control Kent - A service by Roundwood Solutions Ltd"
+   ↓
+   "© 2025 Weed Control Kent - A service by [LINK]Roundwood Solutions Ltd[/LINK]"
+   
+   Link opens in new tab with styled green color (#a8d5a8)
+
+BLOG PAGES (blog.html + 4 blog posts):
+---------------------------------------
+
+1. FOOTER - COPYRIGHT LINE
+   "© 2025 Weed Control Kent | Roundwood Solutions Limited | BALI Accredited"
+   ↓
+   "© 2025 Weed Control Kent | [LINK]Roundwood Solutions Limited[/LINK] | BALI Accredited"
+   
+   Link opens in new tab with styled green color (#a8d5a8)
+
+═══════════════════════════════════════════════════════════════════
+📊 LINK COUNT BY FILE
+═══════════════════════════════════════════════════════════════════
+
+index.html                                        - 4 links to Roundwood
+services.html                                     - 3 links to Roundwood
+about.html                                        - 3 links to Roundwood
+contact.html                                      - 3 links to Roundwood
+blog.html                                         - 1 link to Roundwood
+blog-industrial-estates-weed-control.html         - 1 link to Roundwood
+blog-car-park-facility-managers-guide.html        - 1 link to Roundwood
+blog-bali-accredited-vs-non-accredited.html       - 1 link to Roundwood
+blog-commercial-contracts-cost-effective.html     - 1 link to Roundwood
+
+TOTAL: 18 links to roundwoodsolutions.co.uk across all pages
+
+═══════════════════════════════════════════════════════════════════
+🎨 LINK STYLING
+═══════════════════════════════════════════════════════════════════
+
+HEADER TAGLINE LINKS:
+- Color: Inherits from parent (matches existing text)
+- Style: Underlined for visibility
+- Opens in: New tab (target="_blank")
+
+FOOTER LINKS:
+- Color: #a8d5a8 (light green - matches other footer links)
+- Style: No underline (clean footer appearance)
+- Hover: Browser default underline
+- Opens in: New tab (target="_blank")
+
+═══════════════════════════════════════════════════════════════════
+✅ BENEFITS
+═══════════════════════════════════════════════════════════════════
+
+1. CROSS-PROMOTION
+   - Weed Control Kent visitors can discover Roundwood Solutions
+   - Builds brand recognition for parent company
+   - Shows full range of services available
+
+2. SEO BENEFITS
+   - Internal links from weedcontrolkent.co.uk → roundwoodsolutions.co.uk
+   - Passes "link juice" to main company site
+   - Helps both sites in search rankings
+
+3. TRUST SIGNALS
+   - Shows Weed Control Kent is backed by established company
+   - Professional presentation
+   - Clear business relationship
+
+4. USER EXPERIENCE
+   - Visitors can easily find landscaping/grounds maintenance services
+   - Opens in new tab so they don't lose their place
+   - Consistent branding across both sites
+
+═══════════════════════════════════════════════════════════════════
+📋 TECHNICAL DETAILS
+═══════════════════════════════════════════════════════════════════
+
+Link URL: https://roundwoodsolutions.co.uk
+Target: _blank (opens in new tab)
+Rel: (none - same company, internal link)
+
+Example HTML:
+<a href="https://roundwoodsolutions.co.uk" target="_blank" 
+   style="color: #a8d5a8; text-decoration: none;">
+   Roundwood Solutions Ltd
+</a>
+
+═══════════════════════════════════════════════════════════════════
+🚀 READY TO UPLOAD
+═══════════════════════════════════════════════════════════════════
+
+All 9 HTML files have been updated and are ready for upload:
+
+✅ index.html
+✅ services.html
+✅ about.html
+✅ contact.html
+✅ blog.html
+✅ blog-industrial-estates-weed-control.html
+✅ blog-car-park-facility-managers-guide.html
+✅ blog-bali-accredited-vs-non-accredited.html
+✅ blog-commercial-contracts-cost-effective.html
+
+Plus sitemap.xml and robots.txt (no changes to these)
+
+═══════════════════════════════════════════════════════════════════
+💡 WHAT VISITORS WILL SEE
+═══════════════════════════════════════════════════════════════════
+
+AT TOP OF EVERY PAGE:
+  WEED CONTROL KENT
+  A specialist service by [Roundwood Solutions Ltd] <- CLICKABLE
+  
+AT BOTTOM OF EVERY PAGE:
+  Weed Control Kent
+  Professional commercial weed control...
+  A specialist service by [Roundwood Solutions Ltd] <- CLICKABLE
+  
+  © 2025 Weed Control Kent - A service by 
+  [Roundwood Solutions Ltd] <- CLICKABLE
+
+WHEN THEY CLICK:
+  → Opens roundwoodsolutions.co.uk in new tab
+  → Can explore full landscaping/grounds maintenance services
+  → Original weedcontrolkent.co.uk page stays open
+
+═══════════════════════════════════════════════════════════════════
+
+🎉 ALL DONE!
+
+Upload these files to GitHub and your site will promote both
+Weed Control Kent AND Roundwood Solutions together!
+
+═══════════════════════════════════════════════════════════════════

@@ -33,4 +33,44 @@
     <priority>0.7</priority>
   </url>
   
+  <!-- Blog Index - High Priority -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Blog Post: Industrial Estates Weed Control -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog-industrial-estates-weed-control.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Blog Post: Car Park Facility Managers Guide -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog-car-park-facility-managers-guide.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Blog Post: BALI Accredited vs Non-Accredited -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog-bali-accredited-vs-non-accredited.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Blog Post: Commercial Contracts Cost-Effective -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog-commercial-contracts-cost-effective.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
 </urlset>
