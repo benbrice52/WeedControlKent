@@ -22,40 +22,73 @@
         }
         
         header {
-            background: linear-gradient(135deg, #E74C3C 0%, #c0392b 100%);
-            color: white;
-            padding: 1rem 2rem;
+            background: white;
+            color: #2c3e50;
+            padding: 1rem 0;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            text-decoration: none;
-            color: white;
-        }
-        
-        .logo span:first-child {
-            color: #E74C3C;
-        }
-        
-        nav {
-            background: #34495e;
-            padding: 1rem 2rem;
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
             display: flex;
-            gap: 2rem;
+            justify-content: space-between;
+            align-items: center;
             flex-wrap: wrap;
         }
         
+        .logo {
+            text-decoration: none;
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        
+        .logo h1 .weed { color: #e74c3c; }
+        .logo h1 .control { color: #2c3e50; }
+        .logo h1 .kent { color: #3498db; }
+        
+        .tagline {
+            font-size: 0.9rem;
+            color: #2c3e50;
+            opacity: 0.9;
+            margin-top: 0.25rem;
+        }
+        
+        .tagline a {
+            color: #2c3e50;
+            text-decoration: underline;
+        }
+        
+        nav {
+            background: transparent;
+            padding: 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        
         nav a {
-            color: white;
+            color: #2c3e50;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
         }
         
         nav a:hover {
-            color: #3498db;
+            color: #27ae60;
+            border-bottom-color: #27ae60;
         }
         
         .blog-container {
@@ -293,6 +326,17 @@
         }
         
         @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+            
             .blog-title {
                 font-size: 1.8rem;
             }
@@ -305,26 +349,29 @@
                 height: 250px;
                 font-size: 2rem;
             }
-            
-            nav {
-                gap: 1rem;
-            }
         }
     </style>
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo"><span>WEED</span>CONTROL<span style="color: #3498db;">KENT</span></a>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.9;">A specialist service by <a href="https://roundwoodsolutions.co.uk" target="_blank" style="color: white; text-decoration: underline;">Roundwood Solutions Ltd</a></p>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <h1><span class="weed">WEED</span><span class="control">CONTROL</span><span class="kent">KENT</span></h1>
+                </a>
+                <p class="tagline">A specialist service by <a href="https://roundwoodsolutions.co.uk" target="_blank">Roundwood Solutions Ltd</a></p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About & BALI</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About & BALI</a>
-        <a href="services.html">Services</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
     
     <div class="blog-container">
         <article>
@@ -848,7 +895,7 @@
                 <p><strong>Contact us today to arrange your free school grounds survey:</strong></p>
                 
                 <p style="font-size: 1.2rem; margin: 2rem 0;"><strong>📞 Call: 07545 642021<br>
-                📧 Email: office@roundwoodsolutions.co.uk<br>
+                📧 Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f29d94949b9197b2809d879c96859d9d96819d9e87869b9d9c81dc919ddc8799">[email&#160;protected]</a><br>
                 🌐 Online: <a href="https://forms.gle/VTCZ7VtjD9X9Gfdi9" target="_blank">Request Quote</a></strong></p>
                 
                 <p><em>Professional school weed control services across Kent • BALI accredited • PA1 & PA6 AW certified operators • Child-safe treatments • Holiday scheduling • Comprehensive documentation • Fixed-price contracts • Emergency callouts available</em></p>
@@ -876,13 +923,8 @@
             <div class="footer-section">
                 <h3>Contact</h3>
                 <p>📞 <a href="tel:07545642021">07545 642021</a></p>
-                <p>📧 <a href="mailto:office@roundwoodsolutions.co.uk">office@roundwoodsolutions.co.uk</a></p>
+                <p>📧 <a href="/cdn-cgi/l/email-protection#543b32323d373114263b213a30233b3b30273b3821203d3b3a277a373b7a213f"><span class="__cf_email__" data-cfemail="85eae3e3ece6e0c5f7eaf0ebe1f2eaeae1f6eae9f0f1eceaebf6abe6eaabf0ee">[email&#160;protected]</span></a></p>
                 <p>📍 Serving all Kent including Chatham, Maidstone, Rochester, Gillingham & Medway</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Weed Control Kent | <a href="https://roundwoodsolutions.co.uk" target="_blank" style="color: #3498db; text-decoration: none;">Roundwood Solutions Limited</a> | BALI Accredited. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+        <div clas
