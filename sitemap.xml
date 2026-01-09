@@ -105,4 +105,86 @@
     <priority>0.7</priority>
   </url>
   
+  <!-- Location Pages - Town-Specific Weed Control -->
+  
+  <!-- Medway Towns -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/chatham-weed-control.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/rochester-weed-control.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/gillingham-weed-control.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/strood-weed-control.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/rainham-weed-control.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- North Kent Towns -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/dartford-weed-control.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/gravesend-weed-control.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/swanscombe-weed-control.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/northfleet-weed-control.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Maidstone & West Kent -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/maidstone-weed-control.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/tonbridge-weed-control.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
 </urlset>
