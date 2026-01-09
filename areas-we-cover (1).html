@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areas We Cover | Commercial Weed Control Across Kent | Chatham, Maidstone, Rochester</title>
+    <meta name="description" content="Professional commercial weed control services throughout Kent. Serving Chatham, Maidstone, Rochester, Gillingham, Medway, and all surrounding areas. BALI accredited, PA1 & PA6 certified.">
+    <meta name="keywords" content="weed control kent, weed control chatham, weed control maidstone, weed control rochester, weed control gillingham, weed control medway, commercial weed control kent, areas we cover">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-192.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #ffffff;
+        }
+        
+        header {
+            background: white;
+            color: #2c3e50;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            text-decoration: none;
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        
+        .logo h1 .weed { color: #e74c3c; }
+        .logo h1 .control { color: #2c3e50; }
+        .logo h1 .kent { color: #3498db; }
+        
+        .tagline {
+            font-size: 0.9rem;
+            color: #2c3e50;
+            opacity: 0.9;
+            margin-top: 0.25rem;
+        }
+        
+        .tagline a {
+            color: #2c3e50;
+            text-decoration: underline;
+        }
+        
+        nav {
+            background: transparent;
+            padding: 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+        }
+        
+        nav a:hover {
+            color: #27ae60;
+            border-bottom-color: #27ae60;
+        }
+        
+        .page-hero {
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .page-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .page-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .intro-section {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .intro-section p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .area-card {
+            background: white;
+            border: 2px solid #ecf0f1;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .area-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-color: #27ae60;
+        }
+        
+        .area-card h2 {
+            color: #27ae60;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .area-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .area-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .area-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #E74C3C 0%, #c0392b 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .cta-box h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #E74C3C;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: transform 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .coverage-info {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+        }
+        
+        .coverage-info h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 2rem 1.5rem 2rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a:hover {
+            color: #3498db;
+        }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid #34495e;
+            text-align: center;
+            color: #95a5a6;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+            
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .areas-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <h1><span class="weed">WEED</span><span class="control">CONTROL</span><span class="kent">KENT</span></h1>
+                </a>
+                <p class="tagline">A specialist service by <a href="https://roundwoodsolutions.co.uk" target="_blank">Roundwood Solutions Ltd</a></p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About & BALI</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="page-hero">
+        <h1>Professional Weed Control Throughout Kent</h1>
+        <p>Serving commercial properties, industrial estates, schools, and local authorities across the entire county</p>
+    </div>
+    
+    <div class="container">
+        <div class="intro-section">
+            <p>At Weed Control Kent, we provide professional, BALI-accredited commercial weed control services to businesses and organizations throughout Kent. Whether your property is in the heart of Medway or the outskirts of the county, our qualified team can deliver prompt, reliable weed control solutions tailored to your specific requirements.</p>
+        </div>
+        
+        <div class="areas-grid">
+            <div class="area-card">
+                <h2>Medway Towns</h2>
+                <ul>
+                    <li>Chatham</li>
+                    <li>Rochester</li>
+                    <li>Gillingham</li>
+                    <li>Strood</li>
+                    <li>Rainham</li>
+                    <li>Walderslade</li>
+                    <li>Hempstead</li>
+                    <li>Wigmore</li>
+                </ul>
+            </div>
+            
+            <div class="area-card">
+                <h2>Maidstone & Surrounds</h2>
+                <ul>
+                    <li>Maidstone</li>
+                    <li>Bearsted</li>
+                    <li>Aylesford</li>
+                    <li>Malling</li>
+                    <li>Ditton</li>
+                    <li>Barming</li>
+                    <li>Allington</li>
+                    <li>Penenden Heath</li>
+                </ul>
+            </div>
+            
+            <div class="area-card">
+                <h2>North Kent</h2>
+                <ul>
+                    <li>Dartford</li>
+                    <li>Gravesend</li>
+                    <li>Swanscombe</li>
+                    <li>Northfleet</li>
+                    <li>Stone</li>
+                    <li>Greenhithe</li>
+                    <li>Ebbsfleet</li>
+                    <li>Bean</li>
+                </ul>
+            </div>
+            
+            <div class="area-card">
+                <h2>West Kent</h2>
+                <ul>
+                    <li>Tonbridge</li>
+                    <li>Sevenoaks</li>
+                    <li>Royal Tunbridge Wells</li>
+                    <li>Paddock Wood</li>
+                    <li>Borough Green</li>
+                    <li>Wrotham</li>
+                    <li>West Malling</li>
+                    <li>Kings Hill</li>
+                </ul>
+            </div>
+            
+            <div class="area-card">
+                <h2>East Kent</h2>
+                <ul>
+                    <li>Canterbury</li>
+                    <li>Ashford</li>
+                    <li>Folkestone</li>
+                    <li>Dover</li>
+                    <li>Deal</li>
+                    <li>Sandwich</li>
+                    <li>Hythe</li>
+                    <li>New Romney</li>
+                </ul>
+            </div>
+            
+            <div class="area-card">
+                <h2>Coastal Kent</h2>
+                <ul>
+                    <li>Whitstable</li>
+                    <li>Herne Bay</li>
+                    <li>Margate</li>
+                    <li>Ramsgate</li>
+                    <li>Broadstairs</li>
+                    <li>Birchington</li>
+                    <li>Westgate-on-Sea</li>
+                    <li>Cliftonville</li>
+                </ul>
+            </div>
+            
+            <div class="area-card">
+                <h2>Swale District</h2>
+                <ul>
+                    <li>Sittingbourne</li>
+                    <li>Faversham</li>
+                    <li>Isle of Sheppey</li>
+                    <li>Sheerness</li>
+                    <li>Minster</li>
+                    <li>Queenborough</li>
+                    <li>Leysdown</li>
+                    <li>Newington</li>
+                </ul>
+            </div>
+            
+            <div class="area-card">
+                <h2>Rural Kent</h2>
+                <ul>
+                    <li>Villages throughout Kent</li>
+                    <li>Rural business parks</li>
+                    <li>Agricultural estates</li>
+                    <li>Country hotels</li>
+                    <li>Farm businesses</li>
+                    <li>Rural industrial sites</li>
+                    <li>Remote facilities</li>
+                    <li>All surrounding areas</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="coverage-info">
+            <h3>🚗 Fast, Reliable Service Across Kent</h3>
+            <p>Based in Chatham at the heart of Medway, we're ideally positioned to serve commercial properties throughout Kent. Our mobile service means we come to you, bringing all necessary equipment and professional-grade herbicides to deliver effective weed control wherever your property is located.</p>
+            
+            <h3 style="margin-top: 2rem;">📍 Can't See Your Area?</h3>
+            <p>If your location isn't listed above, don't worry! We regularly serve properties throughout Kent and are always happy to discuss your requirements. Give us a call on <strong>07545 642021</strong> and we'll confirm we can reach your site.</p>
+            
+            <h3 style="margin-top: 2rem;">⚡ Response Times</h3>
+            <p><strong>Medway & Maidstone:</strong> Same-day quotes, next-day service available<br>
+            <strong>North & West Kent:</strong> Same-day quotes, service within 48 hours<br>
+            <strong>East & Coastal Kent:</strong> 24-hour quotes, service within 2-3 days<br>
+            <strong>Emergency treatments:</strong> Available across all areas - call for availability</p>
+        </div>
+        
+        <div class="cta-box">
+            <h2>Get Your Free Quote Today</h2>
+            <p>Professional commercial weed control throughout Kent</p>
+            <p style="font-size: 1.3rem; margin: 1.5rem 0;"><strong>📞 Call: 07545 642021</strong></p>
+            <a href="https://forms.gle/VTCZ7VtjD9X9Gfdi9" class="cta-button" target="_blank">Request Free Quote</a>
+            <p style="margin-top: 1.5rem; font-size: 0.9rem;">BALI Accredited | PA1 & PA6 Certified | £5M Insured</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Weed Control Kent</h3>
+                <p>Professional commercial weed control and invasive species management services across Kent.</p>
+                <p style="margin-top: 1rem;"><strong>A specialist service by <a href="https://roundwoodsolutions.co.uk" target="_blank" style="color: #3498db;">Roundwood Solutions Ltd</a></strong></p>
+                <p style="margin-top: 0.5rem;"><strong>BALI Accredited | PA1 & PA6 AW Certified</strong></p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About & BALI Credentials</a>
+                <a href="services.html">Commercial Weed Control Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📞 <a href="tel:07545642021">07545 642021</a></p>
+                <p>📧 <a href="mailto:office@roundwoodsolutions.co.uk">office@roundwoodsolutions.co.uk</a></p>
+                <p>📍 Serving all Kent including Chatham, Maidstone, Rochester, Gillingham & Medway</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Weed Control Kent | <a href="https://roundwoodsolutions.co.uk" target="_blank" style="color: #3498db; text-decoration: none;">Roundwood Solutions Limited</a> | BALI Accredited. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
