@@ -4,7 +4,7 @@
   <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://weedcontrolkent.co.uk/</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Services Page - High Priority (Commercial Focus) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/services.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2026-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Contact Page - High Priority (Conversion Page) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/contact.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2026-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- About/BALI Page - Medium Priority -->
   <url>
     <loc>https://weedcontrolkent.co.uk/about.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2026-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -44,7 +44,7 @@
   <!-- Areas We Cover - High Priority (Local SEO) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/areas-we-cover.html</loc>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -105,9 +105,12 @@
     <priority>0.7</priority>
   </url>
   
-  <!-- Location Pages - Town-Specific Weed Control -->
+  <!-- ========================================== -->
+  <!-- LOCATION PAGES - TOWN-SPECIFIC WEED CONTROL -->
+  <!-- All 29 Kent Towns Covered -->
+  <!-- ========================================== -->
   
-  <!-- Medway Towns -->
+  <!-- MEDWAY TOWNS (5) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/chatham-weed-control.html</loc>
     <lastmod>2026-01-09</lastmod>
@@ -143,7 +146,7 @@
     <priority>0.8</priority>
   </url>
   
-  <!-- North Kent Towns -->
+  <!-- NORTH KENT (4) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/dartford-weed-control.html</loc>
     <lastmod>2026-01-09</lastmod>
@@ -172,7 +175,7 @@
     <priority>0.8</priority>
   </url>
   
-  <!-- Maidstone & West Kent -->
+  <!-- WEST KENT (4) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/maidstone-weed-control.html</loc>
     <lastmod>2026-01-09</lastmod>
@@ -183,6 +186,137 @@
   <url>
     <loc>https://weedcontrolkent.co.uk/tonbridge-weed-control.html</loc>
     <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/sevenoaks-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/tunbridge-wells-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- MAIDSTONE AREA (2) -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/paddock-wood-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/aylesford-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- EAST KENT (2) -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/canterbury-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/ashford-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- COASTAL KENT (5) -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/folkestone-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/dover-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/deal-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/sandwich-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/hythe-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- NORTH COAST / THANET (5) -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/whitstable-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/herne-bay-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/margate-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/ramsgate-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/broadstairs-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- SWALE (2) -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/sittingbourne-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://weedcontrolkent.co.uk/faversham-weed-control.html</loc>
+    <lastmod>2026-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
