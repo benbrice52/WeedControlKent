@@ -10,16 +10,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Get the repository files
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2️⃣ Deploy via FTPS
       - name: Deploy website via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}/
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}/   # <-- htdocs in your case
           protocol: ftps
           port: 21
           dangerous-clean-slate: false
@@ -29,3 +31,6 @@ jobs:
             **/.git*/**
             **/node_modules/**
             **/.DS_Store
+            **/.well-known/**    # Exclude SSL validation folder
+            **/*.yml              # Exclude workflow files like deploy.yml
+            
