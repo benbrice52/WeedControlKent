@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Get the repository files
+      # 1️⃣ Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Deploy via FTPS
+      # 2️⃣ Deploy website via FTPS
       - name: Deploy website via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -31,6 +31,5 @@ jobs:
             **/.git*/**
             **/node_modules/**
             **/.DS_Store
-            **/.well-known/**    # Exclude SSL validation folder
-            **/*.yml              # Exclude workflow files like deploy.yml
-            
+            **/.well-known/**    # Avoid FTP crash
+            **/*.yml              # Don’t deploy workflow files
