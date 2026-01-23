@@ -24,7 +24,7 @@ jobs:
           server-dir: ${{ secrets.FTP_SERVER_DIR }}/   # <-- htdocs in your case
           protocol: ftps
           port: 21
-          dangerous-clean-slate: false
+          dangerous-clean-slate: true
           log-level: verbose
           exclude: |
             **/.git*
