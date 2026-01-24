@@ -278,7 +278,29 @@
 <!-- ═══════════════════════════════════════════════════════════════════
      FAQ PAGE SCHEMA - faq.html
      Copy this code and paste it in the <head> section
-     Place it BEFORE the closing </head> tag
+     Place it BEFORE the closing 
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "name": "Frequently Asked Questions - Weed Control Kent",
+      "description": "Common questions about commercial weed control services in Kent.",
+      "url": "https://weedcontrolkent.co.uk/faq.html"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://weedcontrolkent.co.uk"},
+        {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://weedcontrolkent.co.uk/faq.html"}
+      ]
+    }
+    </script>
+
+</head> tag
      
      NOTE: Update the questions and answers to match your actual FAQ content
      This is a template with common weed control questions
