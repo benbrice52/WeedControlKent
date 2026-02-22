@@ -50,20 +50,33 @@
         .tag { background: #e8f5e9; color: #2c5f2d; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500; }
         .intro { font-size: 1.15rem; color: #555; line-height: 1.8; margin: 2rem 0; padding: 1.5rem; background: #f8f9fa; border-left: 4px solid #2c5f2d; }
         .back-link { margin: 2rem 0; }
-        .back-link a { color: #2c5f2d; text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; transition: color 0.3s; }
+        .back-link a { color: #2c5f2d; text-decoration: none; font-weight: 500; transition: color 0.3s; }
         .back-link a:hover { color: #1f4520; }
         h2 { color: #2c5f2d; font-size: 2rem; margin: 2.5rem 0 1rem 0; padding-top: 1rem; }
-        h3 { color: #2c5f2d; font-size: 1.5rem; margin: 2rem 0 1rem 0; }
+        h3 { color: #2c5f2d; font-size: 1.5rem; margin: 2rem 0 0.75rem 0; }
         p { margin-bottom: 1.2rem; color: #444; }
         ul, ol { margin: 1rem 0 1.5rem 2rem; }
         li { margin-bottom: 0.8rem; color: #444; }
         strong { color: #2c3e50; font-weight: 600; }
         em { font-style: italic; }
+
+        /* Photo float alongside species heading + text */
+        .species-img {
+            float: right;
+            margin: 0 0 1.5rem 2rem;
+            width: 260px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            display: block;
+        }
+        .species-section { overflow: hidden; margin-bottom: 0.5rem; }
+
         .alert-box { background: #e8f5e9; border-left: 4px solid #27ae60; padding: 1.5rem; border-radius: 8px; margin: 2rem 0; }
         .alert-box p { margin: 0; font-size: 1.05rem; }
         .alert-box a { color: #2c5f2d; font-weight: 600; }
         .warning-box { background: #fff3e0; border-left: 4px solid #ff9800; padding: 1.5rem; border-radius: 8px; margin: 2rem 0; }
         .warning-box p { margin: 0; }
+
         .cta-section { background: linear-gradient(135deg, #2c5f2d 0%, #4a7c4e 100%); color: white; padding: 2rem; border-radius: 8px; margin: 3rem 0; text-align: center; }
         .cta-section h3 { color: white; margin-top: 0; }
         .cta-section p { color: white; }
@@ -76,6 +89,7 @@
         .related-content li { margin-bottom: 0.8rem; }
         .related-content a { color: #2c5f2d; text-decoration: none; font-weight: 500; }
         .related-content a:hover { text-decoration: underline; }
+
         footer { background: #1f4520; color: white; padding: 3rem 2rem 2rem 2rem; margin-top: 4rem; }
         .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
         .footer-section h3 { color: white; font-size: 1.2rem; margin-bottom: 1rem; }
@@ -86,6 +100,7 @@
         .footer-section p { color: #a8d5a8; line-height: 1.6; }
         .footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 2rem; border-top: 1px solid #4a7c4e; text-align: center; }
         .footer-bottom p { color: #a8d5a8; margin-bottom: 0.5rem; }
+
         @media (max-width: 768px) {
             nav { flex-direction: column; text-align: center; }
             nav ul { flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1rem; }
@@ -93,6 +108,7 @@
             h2 { font-size: 1.6rem; }
             article { padding: 2rem 1.5rem; }
             main { padding: 0 1rem; }
+            .species-img { float: none; width: 100%; margin: 0 0 1.5rem 0; }
         }
     </style>
 </head>
@@ -140,7 +156,7 @@
                     <a href="blog.html">&#8592; Back to Blog</a>
                 </div>
 
-                <p class="intro">Japanese knotweed and other invasive weed species are a serious and growing problem for commercial properties across Kent. As a property owner or facilities manager, you have specific legal obligations — and the cost of ignoring them can far exceed the cost of professional treatment. This guide covers what qualifies as an invasive weed, what the law says, and why professional removal by PA6AW-certified specialists is the only reliable solution.</p>
+                <p class="intro">Japanese knotweed and other invasive weed species are a serious and growing problem for commercial properties across Kent. As a property owner or facilities manager, you have specific legal obligations &#8212; and the cost of ignoring them can far exceed the cost of professional treatment. This guide covers what qualifies as an invasive weed, what the law says, and why professional removal by PA6AW-certified specialists is the only reliable solution.</p>
 
                 <div class="alert-box">
                     <p><strong>&#9888;&#65039; Found invasive weeds on your commercial site?</strong> Weed Control Kent provides certified invasive weed surveys and treatment across Kent and Medway. PA6AW qualified, BALI accredited, fully insured. <a href="contact.html">Request a free site survey &#8594;</a></p>
@@ -148,11 +164,15 @@
 
                 <h2>What Is Japanese Knotweed &#8212; and Why Does It Affect Commercial Properties?</h2>
 
-                <p>Japanese knotweed (<em>Reynoutria japonica</em>) is one of the most invasive plant species in the UK. Introduced as an ornamental plant in the 19th century, it has spread extensively across Kent, particularly along river corridors, railway embankments, roadsides, and brownfield sites. Commercial properties &#8212; including industrial estates, car parks, business parks, and development land &#8212; are frequently affected.</p>
-
-                <p>What makes knotweed genuinely dangerous for a commercial property owner is its growth behaviour. The plant spreads through its root system (rhizomes), which can extend up to 7 metres horizontally and 3 metres deep. It forces its way through block paving, concrete joints, drainage infrastructure, and building foundations &#8212; causing structural damage that is expensive to repair and can significantly affect property values.</p>
-
-                <p>Beyond the physical damage, the presence of Japanese knotweed on or near your property creates a range of legal, financial, and reputational risks that facilities managers and property owners need to understand clearly.</p>
+                <div class="species-section">
+                    <img src="japanese-knotweed.jpg"
+                         alt="Japanese knotweed on a commercial site in Kent showing distinctive shield-shaped leaves"
+                         class="species-img"
+                         loading="lazy">
+                    <p>Japanese knotweed (<em>Reynoutria japonica</em>) is one of the most invasive plant species in the UK. Introduced as an ornamental plant in the 19th century, it has spread extensively across Kent, particularly along river corridors, railway embankments, roadsides, and brownfield sites. Commercial properties &#8212; including industrial estates, car parks, business parks, and development land &#8212; are frequently affected.</p>
+                    <p>What makes knotweed genuinely dangerous for a commercial property owner is its growth behaviour. The plant spreads through its root system (rhizomes), which can extend up to 7 metres horizontally and 3 metres deep. It forces its way through block paving, concrete joints, drainage infrastructure, and building foundations &#8212; causing structural damage that is expensive to repair and can significantly affect property values.</p>
+                    <p>Beyond the physical damage, the presence of Japanese knotweed on or near your property creates a range of legal, financial, and reputational risks that facilities managers and property owners need to understand clearly.</p>
+                </div>
 
                 <h2>Your Legal Obligations as a Commercial Property Owner in Kent</h2>
 
@@ -178,14 +198,32 @@
 
                 <p>While Japanese knotweed receives the most attention, several other invasive species pose significant problems for commercial landowners in Kent. Professional invasive weed removal often needs to address multiple species simultaneously.</p>
 
-                <h3>Giant Hogweed</h3>
-                <p>Giant hogweed (<em>Heracleum mantegazzianum</em>) is particularly prevalent along Kent&#39;s river corridors and on neglected commercial land. Its sap causes severe photosensitive burns on skin contact and can cause permanent scarring and temporary blindness. This plant on your commercial site represents a serious health and safety risk &#8212; particularly if the site is accessible to the public, contractors, or maintenance staff. Giant hogweed is also listed under Schedule 9 of the Wildlife &amp; Countryside Act, making its spread a criminal matter.</p>
+                <div class="species-section">
+                    <img src="giant-hogweed.jpg"
+                         alt="Giant hogweed standing over 3 metres tall in a Kent field showing large white umbrella flower heads"
+                         class="species-img"
+                         loading="lazy">
+                    <h3>Giant Hogweed</h3>
+                    <p>Giant hogweed (<em>Heracleum mantegazzianum</em>) is particularly prevalent along Kent&#39;s river corridors and on neglected commercial land. Its sap causes severe photosensitive burns on skin contact and can cause permanent scarring and temporary blindness. From a liability perspective, this plant on your commercial site represents a serious health and safety risk &#8212; particularly if the site is accessible to the public, contractors, or maintenance staff. Giant hogweed is also listed under Schedule 9 of the Wildlife &amp; Countryside Act, making its spread a criminal matter.</p>
+                </div>
 
-                <h3>Himalayan Balsam</h3>
-                <p>Himalayan balsam is widespread along waterways and on damp, disturbed ground across Kent. While it does not carry the same structural damage risks as knotweed, it spreads aggressively &#8212; displacing native vegetation and leaving riverbanks bare and vulnerable to erosion in winter. On commercial sites adjacent to watercourses, its management is often required by the Environment Agency as part of site licence conditions or planning obligations.</p>
+                <div class="species-section">
+                    <img src="himalayan-balsam.jpg"
+                         alt="Himalayan balsam with distinctive pink flowers growing along a Kent watercourse"
+                         class="species-img"
+                         loading="lazy">
+                    <h3>Himalayan Balsam</h3>
+                    <p>Himalayan balsam is widespread along waterways and on damp, disturbed ground across Kent. While it does not carry the same structural damage risks as knotweed, it spreads aggressively &#8212; displacing native vegetation and leaving riverbanks bare and vulnerable to erosion in winter. On commercial sites adjacent to watercourses, its management is often required by the Environment Agency as part of site licence conditions or planning obligations.</p>
+                </div>
 
-                <h3>Rhododendron Ponticum</h3>
-                <p>Common on larger estates, golf courses, and landscaped commercial properties across Kent, rhododendron ponticum is a highly invasive shrub that forms dense thickets, shading out native species and preventing natural regeneration. Management typically requires a combination of mechanical cutting and targeted herbicide treatment by qualified operatives.</p>
+                <div class="species-section">
+                    <img src="rhododendron.jpg"
+                         alt="Rhododendron ponticum forming a dense evergreen thicket on a commercial landscape site in Kent"
+                         class="species-img"
+                         loading="lazy">
+                    <h3>Rhododendron Ponticum</h3>
+                    <p>Common on larger estates, golf courses, and landscaped commercial properties across Kent, rhododendron ponticum is a highly invasive shrub that forms dense thickets, shading out native species and preventing natural regeneration. Management typically requires a combination of mechanical cutting and targeted herbicide treatment by qualified operatives.</p>
+                </div>
 
                 <h2>Why DIY or Unqualified Treatment Rarely Works</h2>
 
@@ -205,8 +243,10 @@
 
                 <h2>Professional Invasive Weed Removal: What the Process Looks Like</h2>
 
+                <p>Professional treatment of Japanese knotweed and other invasive species follows a structured programme &#8212; there is no single-visit solution. Here is what a properly managed programme involves:</p>
+
                 <h3>Stage 1: Site Survey and Identification</h3>
-                <p>A thorough site survey by a qualified operative identifies all invasive species present, maps their extent, and assesses their proximity to structures, drainage systems, and site boundaries. This survey forms the basis of the treatment plan and provides initial documentation of the problem's extent &#8212; useful for insurance purposes and for any future property transaction.</p>
+                <p>A thorough site survey by a qualified operative identifies all invasive species present, maps their extent, and assesses their proximity to structures, drainage systems, and site boundaries. This survey forms the basis of the treatment plan and provides your initial documentation of the problem&#39;s extent &#8212; useful for insurance purposes and for any future property transaction.</p>
 
                 <h3>Stage 2: Treatment Plan</h3>
                 <p>A site-specific treatment plan is prepared, detailing the herbicide products to be used, the method of application, the treatment schedule, and the waste management approach. For knotweed specifically, herbicide-based treatment programmes typically run over two to three growing seasons, with applications timed to coincide with periods of maximum plant activity. A management plan document is supplied, which can be provided to lenders, solicitors, or insurers as evidence of professional management.</p>
