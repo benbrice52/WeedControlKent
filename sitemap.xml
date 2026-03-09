@@ -4,7 +4,7 @@
   <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://weedcontrolkent.co.uk/</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -36,7 +36,7 @@
   <!-- Blog Index - High Priority -->
   <url>
     <loc>https://weedcontrolkent.co.uk/blog.html</loc>
-    <lastmod>2026-02-06</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -52,7 +52,7 @@
   <!-- FAQ Page - High Priority (Conversion/Trust) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/faq.html</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -60,7 +60,7 @@
   <!-- Service Page: Car Park Weed Control -->
   <url>
     <loc>https://weedcontrolkent.co.uk/car-park-weed-control.html</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -68,6 +68,22 @@
   <!-- ========================================== -->
   <!-- BLOG POSTS - COMMERCIAL WEED CONTROL -->
   <!-- ========================================== -->
+
+  <!-- Blog Post: Subcontracting Weed Control Kent -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog-subcontract-weed-control-kent.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Post: Invasive Weed Removal Kent -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog-invasive-weed-removal-kent.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   
   <!-- FEATURED: Commercial Contracts Complete Guide -->
   <url>
@@ -112,7 +128,7 @@
   <!-- Blog Post: BALI Accredited vs Non-Accredited -->
   <url>
     <loc>https://weedcontrolkent.co.uk/blog-bali-accredited-vs-non-accredited.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -125,10 +141,10 @@
     <priority>0.7</priority>
   </url>
   
-  <!-- Blog Post: Commercial Weed Control Contracts (Alternate Version) -->
+  <!-- Blog Post: Commercial Weed Control Contracts (canonical points to -kent version) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/blog-commercial-weed-control-contracts.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
