@@ -57,6 +57,13 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Service Page: Commercial Weed Control Services -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/commercial-weed-control-services.html</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <!-- Service Page: Car Park Weed Control -->
   <url>
     <loc>https://weedcontrolkent.co.uk/car-park-weed-control.html</loc>
