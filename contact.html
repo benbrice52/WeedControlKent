@@ -369,7 +369,7 @@
             <h2>Request a Quote</h2>
             <p>Fill out the form below and we'll get back to you within 24 hours</p>
             
-            <form action="https://formspree.io/f/xzdvyypr" method="POST">
+            <form id="contactForm">
                 <div class="form-group">
                     <label for="email">Your Email *</label>
                     <input 
@@ -401,7 +401,7 @@
                     ></textarea>
                 </div>
                 
-                <button type="submit" class="submit-button">
+                <button type="submit" class="submit-button" id="submitBtn">
                     📧 Send Message
                 </button>
                 
@@ -409,6 +409,37 @@
                     We typically respond within 24 hours during business days
                 </p>
             </form>
+
+            <script>
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                var btn = document.getElementById('submitBtn');
+                btn.textContent = 'Sending...';
+                btn.disabled = true;
+
+                var data = new FormData(this);
+
+                fetch('https://formspree.io/f/xzdvyypr', {
+                    method: 'POST',
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                })
+                .then(function(response) {
+                    if (response.ok) {
+                        window.location.href = 'thank-you.html';
+                    } else {
+                        btn.textContent = '📧 Send Message';
+                        btn.disabled = false;
+                        alert('Something went wrong. Please try again or call us on 07545 642021.');
+                    }
+                })
+                .catch(function() {
+                    btn.textContent = '📧 Send Message';
+                    btn.disabled = false;
+                    alert('Something went wrong. Please try again or call us on 07545 642021.');
+                });
+            });
+            </script>
         </div>
     </section>
 
