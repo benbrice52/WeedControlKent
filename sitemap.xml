@@ -36,7 +36,7 @@
   <!-- Blog Index - High Priority -->
   <url>
     <loc>https://weedcontrolkent.co.uk/blog.html</loc>
-    <lastmod>2026-04-15</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,6 +68,14 @@
   <!-- ========================================== -->
   <!-- BLOG POSTS - COMMERCIAL WEED CONTROL -->
   <!-- ========================================== -->
+
+  <!-- Blog Post: Weed Control Housing Associations Kent -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog-weed-control-housing-associations-kent.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Blog Post: Weed Removal Services Kent -->
   <url>
