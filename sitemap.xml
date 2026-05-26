@@ -4,7 +4,7 @@
   <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://weedcontrolkent.co.uk/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -36,7 +36,7 @@
   <!-- Blog Index - High Priority -->
   <url>
     <loc>https://weedcontrolkent.co.uk/blog.html</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,14 +68,6 @@
   <!-- ========================================== -->
   <!-- BLOG POSTS - COMMERCIAL WEED CONTROL -->
   <!-- ========================================== -->
-
-  <!-- Blog Post: Weed Control Housing Associations Kent -->
-  <url>
-    <loc>https://weedcontrolkent.co.uk/blog-weed-control-housing-associations-kent.html</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Blog Post: Weed Removal Services Kent -->
   <url>
@@ -112,7 +104,7 @@
   <!-- Blog Post: Invasive Weed Removal Kent -->
   <url>
     <loc>https://weedcontrolkent.co.uk/blog-invasive-weed-removal-kent.html</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -298,7 +290,7 @@
   <!-- EAST KENT (2) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/canterbury-weed-control.html</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
