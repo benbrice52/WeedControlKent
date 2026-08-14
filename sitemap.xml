@@ -65,6 +65,14 @@
     <priority>0.9</priority>
   </url>
   
+  <!-- Service Page: Commercial Weed Control Services (was missing from sitemap) -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/commercial-weed-control-services.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- ========================================== -->
   <!-- BLOG POSTS - COMMERCIAL WEED CONTROL -->
   <!-- ========================================== -->
@@ -171,6 +179,46 @@
     <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: Car Park Weed Control Cost Kent (was missing from sitemap) -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog-car-park-weed-control-cost-kent.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Post: Japanese Knotweed Removal Kent (was missing from sitemap) -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog-japanese-knotweed-removal-kent.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Post: Local Authority Weed Control Kent (was missing from sitemap) -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog-local-authority-weed-control-kent.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Post: Weed Control Housing Associations Kent (was missing from sitemap) -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog-weed-control-housing-associations-kent.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Post: Weed Spraying Contractors Kent (was missing from sitemap) -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog-weed-spraying-contractors-kent.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   
   <!-- ========================================== -->
