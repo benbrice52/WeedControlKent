@@ -173,14 +173,6 @@
     <priority>0.7</priority>
   </url>
   
-  <!-- Blog Post: Commercial Weed Control Contracts (canonical points to -kent version) -->
-  <url>
-    <loc>https://weedcontrolkent.co.uk/blog-commercial-weed-control-contracts.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
   <!-- Blog Post: Car Park Weed Control Cost Kent (was missing from sitemap) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/blog-car-park-weed-control-cost-kent.html</loc>

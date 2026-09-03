@@ -1,6 +1,9 @@
 # Netlify redirects file
 # Ensures proper routing for HTML files
 
+# Duplicate page removed - redirect to canonical version
+/blog-commercial-weed-control-contracts.html   /blog-commercial-weed-control-contracts-kent.html   301
+
 /contact    /contact.html   200
 /about      /about.html     200
 /services   /services.html  200
