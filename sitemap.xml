@@ -36,7 +36,7 @@
   <!-- Blog Index - High Priority -->
   <url>
     <loc>https://weedcontrolkent.co.uk/blog.html</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,7 +68,7 @@
   <!-- Service Page: Commercial Weed Control Services (was missing from sitemap) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/commercial-weed-control-services.html</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -80,7 +80,7 @@
   <!-- Blog Post: Weed Removal Services Kent -->
   <url>
     <loc>https://weedcontrolkent.co.uk/blog-weed-removal-services-kent.html</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -181,6 +181,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog Post: Scrub Clearance (Nov 2026) -->
+  <url>
+    <loc>https://weedcontrolkent.co.uk/blog-scrub-clearance-kent.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Blog Post: Japanese Knotweed Removal Kent (was missing from sitemap) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/blog-japanese-knotweed-removal-kent.html</loc>
@@ -257,14 +265,14 @@
   <!-- NORTH KENT (4) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/dartford-weed-control.html</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://weedcontrolkent.co.uk/gravesend-weed-control.html</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -286,7 +294,7 @@
   <!-- WEST KENT (4) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/maidstone-weed-control.html</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
