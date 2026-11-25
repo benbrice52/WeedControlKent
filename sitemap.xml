@@ -68,7 +68,7 @@
   <!-- Service Page: Commercial Weed Control Services (was missing from sitemap) -->
   <url>
     <loc>https://weedcontrolkent.co.uk/commercial-weed-control-services.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -77,13 +77,6 @@
   <!-- BLOG POSTS - COMMERCIAL WEED CONTROL -->
   <!-- ========================================== -->
 
-  <!-- Blog Post: Weed Removal Services Kent -->
-  <url>
-    <loc>https://weedcontrolkent.co.uk/blog-weed-removal-services-kent.html</loc>
-    <lastmod>2026-11-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Blog Post: Industrial Weed Control Kent -->
   <url>
@@ -125,13 +118,6 @@
     <priority>0.9</priority>
   </url>
   
-  <!-- Blog Post: Professional Weed Killer Services Kent -->
-  <url>
-    <loc>https://weedcontrolkent.co.uk/blog-professional-weed-killer-services-kent.html</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
   
   <!-- Blog Post: School Weed Control Kent -->
   <url>
@@ -213,13 +199,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Blog Post: Weed Spraying Contractors Kent (was missing from sitemap) -->
-  <url>
-    <loc>https://weedcontrolkent.co.uk/blog-weed-spraying-contractors-kent.html</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
   
   <!-- ========================================== -->
   <!-- LOCATION PAGES - TOWN-SPECIFIC WEED CONTROL -->
